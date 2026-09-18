@@ -1,0 +1,71 @@
+let score=33
+console.log(typeof score)  //Output: number
+console.log(typeof (score)) //Output: number
+/*
+  Difference between 'score' and '(score)' is 'score' ek variable hai jiska data type number hai,aur '(score)' 
+  ek expression hai jiska data type bhi number hi hai.
+
+  '(score)' ko hum ek expression isliye bolte hai kyuki ye ek value return karta hai,aur 'score' ko hum 
+   variable isliye bolte hai kyuki ye ek value store karta hai.
+ */
+
+
+//CONVERSION OF DIFFERENT DATA TYPES TO NUMBER DATA TYPE:
+let score1="33"
+console.log(typeof score1)  //Output: string
+
+let valueInNumber=Number(score1) //Number() is a function which converts string to number.
+console.log(typeof valueInNumber)  //Output: number
+console.log(valueInNumber)  //Output: 33
+
+//But if we try to convert a string which is not a number,then it will give us NaN(Not a Number).
+//So always make sure that the string you are trying to convert to number is a valid number.
+let score2="123Umang"
+console.log(typeof score2)  //Output: string
+let valueInNumber1=Number(score2) //Number() is a function which converts string to number.
+console.log(typeof valueInNumber1)  //Output: number
+console.log(valueInNumber1)  //Output: NaN
+
+//If we convert null to number,then it will give us 0.
+let score3=null
+console.log(typeof score3)  //Output: object
+let valueInNumber2=Number(score3) //Number() is a function which converts null to number.
+console.log(typeof valueInNumber2)  //Output: number
+console.log(valueInNumber2)  //Output: 0
+
+//If we convert undefined to number,then it will give us NaN.
+let score4=undefined
+console.log(typeof score4)  //Output: undefined
+let valueInNumber3=Number(score4) //Number() is a function which converts undefined to number.
+console.log(typeof valueInNumber3)  //Output: number
+console.log(valueInNumber3)  //Output: NaN
+
+//For boolean value,true ke liye 1 aur false ke liye 0 return karega.
+let score5=true
+console.log(typeof score5)  //Output: boolean
+let valueInNumber4=Number(score5) //Number() is a function which converts boolean to number.
+console.log(typeof valueInNumber4)  //Output: number
+console.log(valueInNumber4)  //Output: 1
+
+//Similarly hum sab data types ko dusre data types mei convert kar sakte hai.
+
+//Like Conversion to boolean data type:
+let isLoggedIn=1
+let isBooleanLoggedIn=Boolean(isLoggedIn) //Boolean() is a function which converts number to boolean.
+console.log(typeof isBooleanLoggedIn)  //Output: boolean
+console.log(isBooleanLoggedIn)  //Output: true
+
+let isLoggedIn1=""
+let isBooleanLoggedIn1=Boolean(isLoggedIn1) //Boolean() is a function which converts string to boolean.
+console.log(typeof isBooleanLoggedIn1)  //Output: boolean
+console.log(isBooleanLoggedIn1)  //Output: false
+//1 -> true
+//0 -> false
+//"" -> false
+//"Umang" -> true
+
+//Like Conversion to string data type:
+let someNumber=33
+let stringNumber=String(someNumber) //String() is a function which converts number to string.
+console.log(typeof stringNumber)  //Output: string
+console.log(stringNumber)  //Output: "33"
