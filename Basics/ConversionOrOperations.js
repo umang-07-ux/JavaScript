@@ -69,3 +69,51 @@ let someNumber=33
 let stringNumber=String(someNumber) //String() is a function which converts number to string.
 console.log(typeof stringNumber)  //Output: string
 console.log(stringNumber)  //Output: "33"
+
+
+//************************************ OPERATIONS  ******************************************** 
+let value=3
+let negValue=-value
+console.log(negValue)  //Output: -3
+
+// console.log(3+2)  //Output: 5
+// console.log(3-2)  //Output: 1
+// console.log(2*3)  //Output: 6
+// console.log(2**4)  //Output: 16
+// console.log(3/2)  //Output: 1.5
+// console.log(9%5)  //Output: 4
+
+let str1="Hello"
+let str2=" Umang"
+let str3=str1+str2
+console.log(str3)  //Output: Hello Umang
+
+// console.log("1"+2)  //Output: 12
+// console.log(1+"2")  //Output: 12
+// console.log("1"+2+2) //Output: 122
+// console.log(1+2+"2")  //Output: 32
+
+// These are some type of tricky conversions,but we should always avoid these type of conversions.
+// console.log(+true)  //Output: 1
+// console.log(+"")  //Output: 0
+
+// Always use paranthesis for these type of conversions so that it should be clear which operation has 
+// to be perfromed first.
+console.log((3+4)*(5%3)) //Output: 2
+
+// We can also assign the same value to multiple variables in a single line.But we should avoid this type 
+// of assignment because it is not a good practice.
+let num1,num2,num3
+num1=num2=num3=2+2
+
+//Prefix and Postfix Increment and Decrement Operators:
+let gameCounter=100
+gameCounter++  //Increment by 1 , but it will return the value before incrementing.
+console.log(gameCounter)  //Output: 101 
+++gameCounter  //Increment by 1 , but it will return the value after incrementing.
+console.log(gameCounter)  //Output: 102
+--gameCounter  //Decrement by 1 , but it will return the value before decrementing.
+console.log(gameCounter)  //Output: 101
+gameCounter--  //Decrement by 1 , but it will return the value after decrementing.
+console.log(gameCounter)  //Output: 100
+
