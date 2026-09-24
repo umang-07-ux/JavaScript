@@ -4,6 +4,7 @@
 //Jab bhi stack memory declare hoti hai toh iska mtlb ki hume copy milta hai joh variable humne declare kiya hai.
 //Heap mei original value milti hai toh jo bhi hum change karenge woh original value mei bhi change hogi.
 
+
 //Exmaple:
 //Stack Memory:
 let myName="Umang Srivastava"
