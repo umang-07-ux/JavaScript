@@ -34,7 +34,7 @@ console.log(number5); //Gives max value.
 const number6=Number.MIN_VALUE
 console.log(number6); //Gives min value.
 
-//+++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++Maths +++++++++++++++++++++++++++++++++++++++++++++++++++
 console.log(Math.abs(-4));
 
 console.log(Math.round(4.3));
