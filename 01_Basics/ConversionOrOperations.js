@@ -11,6 +11,7 @@ console.log(typeof (score)) //Output: number
 
 
 //CONVERSION OF DIFFERENT DATA TYPES TO NUMBER DATA TYPE:
+
 let score1="33"
 console.log(typeof score1)  //Output: string
 
