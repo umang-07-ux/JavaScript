@@ -71,6 +71,6 @@ accountCity="Delhi"
 
 /*
   'console.table' ek function hai jisko hum console me table format me output print karne ke liye use 
-   karte hai.
+   karte hai
 */
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
