@@ -14,7 +14,7 @@ console.log("2">1);  //Output: true , here string is converted to number and the
 console.log(null>0); //Output: false
 console.log(null>=0); //Output: true , why? because null is converted to 0 and then comparison is done.
 console.log(null==0); /*Output: false , why? null == 0 isliye false hai kyunki JS ka rule hai — null sirf undefined 
-                       se loosely equal hota hai, == mein usko number mein convert hi nahi kiya jaata 
+                        se loosely equal hota hai, == mein usko number mein convert hi nahi kiya jaata 
                        (jabki <, > jaise relational operators mein convert hota hai, isliye null < 1 true hai).*/
 
 //The reason is that an equality check == and comparisons > < >= <= work differently.
