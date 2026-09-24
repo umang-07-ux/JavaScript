@@ -7,6 +7,7 @@ JavaScript is a dynamically typed language. This means that you do not need to e
 //PRIMITIVE DATATYPES:
 //They are of 7 types:
 //String,Number,Boolean,null,undefined,Symbol,BigInt
+
 //Examples:
 const score=100  //Number
 const scoreValue=100.3 //Number
