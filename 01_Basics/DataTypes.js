@@ -45,4 +45,4 @@ console.log(typeof "Umang")  //Output: string
 console.log(typeof age)  //Output: number
 console.log(typeof null)  //Output: object ,'null' is a tpye of object because of a bug in JavaScript which is 
                           //not fixed till now.
-console.log(typeof undefined)  //Output: undefined ,'undefined' is a datatype.
+console.log(typeof undefined)  //Output: undefined ,'undefined' is a datatype
