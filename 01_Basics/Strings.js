@@ -46,7 +46,7 @@ console.log(url.replace('%20','-'));
 
 console.log(url.includes("umang"));
 
-console.log(gameName.split('-')); //split() convert string into array on the basis of space,-,etc.
+console.log(gameName.split('-')); //split() convert string into array on the basis of space,-,etc
 
 
 
