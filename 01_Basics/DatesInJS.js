@@ -62,8 +62,8 @@ console.log(myTimeStamp);  //Output:1790241644102
 
 
 
-console.log(myCreatedDate3.getTime());  //Output:1768329000000
-                                        //Provide you time on milliseconds.
+console.log(myCreatedDate3.getTime());   //Output:1768329000000
+                                         //Provide you time on milliseconds.
 // getTime() given Date ka timestamp milliseconds mein deta hai.
 
 
