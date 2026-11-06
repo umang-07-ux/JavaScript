@@ -39,3 +39,13 @@ const myCoding=[
 myCoding.forEach( (item) => {
     console.log(item.languageName, "-", item.languageFileName); //Output: JavaScript - js, C++ - cpp, Python - py
 })
+
+//--------------------------------------------------------------------------------------------------
+const nums=[1,2,3,4,5,6,7,8,9,10];
+const newNums1=nums.forEach( (num) => {
+    console.log(num); //Output: 1,2,3,4,5,6,7,8,9,10
+} )
+console.log(newNums1); //Output: undefined. Aisa isliye ho raha hai kyuki 'forEach' loop koi value return nahi karta hai, yeh sirf array ke 
+                       //elements ko iterate karta hai aur unhe print karta hai.
+
+
