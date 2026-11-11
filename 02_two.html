@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+
+    console.log(parent);  //Parent ke andar saari values mil rahi hai.
+
+    console.log(parent.children); //Provides us the html collection of the days.
+
+    console.log(parent.children[1]); //O/P-<div class="day">Tuesday</div>
+
+    console.log(parent.children[1].innerHTML); //O/P-Tuesday
+
+    for(let i=0;i<parent.children.length;i++) {
+        console.log(parent.children[i].innerHTML); //O/P-Monday Tuesday Wednesday Thursday
+    }
+
+    parent.children[2].style.color="orange" //Make Wednesday orange
+
+    console.log(parent.firstElementChild); //Provides first element of the parent class O/P-<div class="day">Monday</div>
+
+    console.log(parent.lastElementChild);  //Provides the last element of the parent class O/P-<div class="day">Thursday</div>
+    
+    const dayOne=document.querySelector('.day')  //We can get the parent element with the help of the child also.
+    console.log(dayOne);
+    console.log(dayOne.parentElement); //Provides the parent element O/P-<div class="parent">...</div>
+    console.log(dayOne.nextElementSibling); //Provides the next sibling of the given child of the parent O/P-<div class="day">Tuesday</div>
+
+    console.log("NODES: ",parent.childNodes); //Provides the nodelist
+    
+    
+    
+    
+    
+    
+    
+</script>
+</html>
