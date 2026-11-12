@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code | DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    //Adding elements using function-
+    //This is the way which is not optimized as it will traverse the all values before adding a new one.
+    function addLanguage(langName) {
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Cpp")
+
+    //Optimized way-
+    function addOptiLanguage(langName) {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("Python")
+    addOptiLanguage("Golang")
+
+    //Editing the values-
+    const selectingLang=document.querySelector("li:nth-child(2)")
+    // selectingLang.innerHTML="Ruby" //It is one of the way but this is not an optimized way to edit.
+
+    //Another way by creating new element and then changing the value-
+    const newli=document.createElement('li')
+    newli.textContent="Ruby"
+    selectingLang.replaceWith(newli)
+
+    //Using outerHTML-
+    const selectingLang2=document.querySelector("li:first-child")
+    selectingLang2.outerHTML='<li>Rust</li>'
+
+    //Removing the element-
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove() //Will remove the the last element here i.e. <li>Golang</li>
+</script>
+</html>
