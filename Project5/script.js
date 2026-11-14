@@ -8,14 +8,14 @@ const randomColor=function() {
     return color;
 }
 
-let intervalId=null;
+let intervalId;
 
 const startChangingColor=function() {
-    intervalId=setInterval(changeBgColor,1000);
+    if(!intervalId) {
+        intervalId=setInterval(changeBgColor,1000);
+    }
     function changeBgColor() {
-        if(intervalId) {
-            document.body.style.backgroundColor=randomColor();
-        }
+        document.body.style.backgroundColor=randomColor();
     }
 }
 
