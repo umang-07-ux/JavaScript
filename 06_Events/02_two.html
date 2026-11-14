@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout and setInterval core JS ke part nhi hai balki ye window object ke part hai.
+
+    // setTimeout method use hota hai jab koi kaam ko particular time ke baad karna hai.
+    // setTimeout sirf ek hi baar woh kaam karta hai.
+    // setTimeout(function() {
+    //     console.log("Umang");
+        
+    // },2000)
+
+    const sayName=function() {
+        console.log("Umang");
+    }
+    setTimeout(sayName,2000);
+
+    const changeText=function() {
+        document.querySelector('h1').innerHTML="Best JS Series"
+    }
+    const changeMe=setTimeout(changeText,2000); //2 sec baad Chai Aur Code ki jagah Best JS Series likh kar aa jayega.
+    
+    // Use of clearTimeout-
+    // clearTimeout setTimeout ke kaam ko rok deta hai execute hone se.
+    document.querySelector('#stop').addEventListener('click',function() {
+        clearTimeout(changeMe)  // Ab yaha par humne ek eventlistner banaya aur usko clearTimeout de diya kik jab stop par click hoga toh setTimeout ka function ruk jayega execute hone se.
+        console.log("Stopped");
+        
+    })
+</script>
+</html>
