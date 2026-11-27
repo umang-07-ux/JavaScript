@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+
+<script>
+    class React {
+        constructor() {
+            this.library = "React";
+            this.server = "https://localhost:300";
+
+            // Requirement
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleClick.bind(this));
+
+            // bind() ka asli use:
+            // bind() ek new function return karta hai jisme this ki value fix hoti hai.
+            // Yahan this constructor ke andar current React object ko refer karta hai.
+            // Isliye handleClick() ke andar bhi this React object ko hi refer karega,
+            // na ki clicked button ko.
+            // bind() function ko immediately execute nahi karta.
+        }
+
+        handleClick() {
+            console.log("button clicked");
+
+            // bind(this) ki wajah se yahan this React object hai.
+            // Isliye hum server property access kar paa rahe hain.
+            console.log(this.server);
+        }
+    }
+
+    const app = new React();
+</script>
+</html>
